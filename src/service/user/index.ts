@@ -4,7 +4,7 @@ import { User } from "../../entity/user";
 export default class UserService {
     async getUser(): Promise<User> {
         try {
-            const response = await axiosinstance.get('randomuser.me/api');
+            const response = await axiosinstance.get('api');
             const userInfo =  userTransformer(response.data.results[0]);
             localStorage.setItem('user', JSON.stringify(response.data.results[0]))
             return userInfo
@@ -17,7 +17,7 @@ export default class UserService {
 const userTransformer = (user: any): User => {
     const theUserInfo = new User(user.name.title, user.name?.first, user.name?.last, user.email);
     if(user.picture?.medium){
-        theUserInfo.profile = user.picture?.medium
+        theUserInfo.picture = user.picture?.medium
     }
     return theUserInfo;
 }

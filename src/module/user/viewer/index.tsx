@@ -5,7 +5,7 @@ import "./index.css";
 import BG from "../../../assets/image/background.jpg";
 import Avatar from "../../../assets/image/avatar.jpg";
 import { Refresh } from "@mui/icons-material";
-import { Button, CircularProgress, Typography } from "@mui/material";
+import { Button, CircularProgress } from "@mui/material";
 
 export const ViewUser = () => {
   const [user, setUser] = useState<User>();
@@ -43,7 +43,7 @@ export const ViewUser = () => {
             <div className="overlay-header"></div>
             <div className="body">
               <img
-                src={user?.profile ? user?.profile : Avatar}
+                src={user?.picture ? user?.picture : Avatar}
                 alt="Hugh Jackman"
                 className="body-image"
               />

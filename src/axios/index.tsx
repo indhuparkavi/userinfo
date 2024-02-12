@@ -3,7 +3,7 @@ import Emitter from "../emitter";
 // import EventEmitter from "reactjs-eventemitter";
 
 const axiosinstance = axios.create({
-    baseURL: 'https://',
+    baseURL: 'https://randomuser.me',
     timeout: 9000,
     headers: {
         Accept: "application/json",

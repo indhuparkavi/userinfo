@@ -3,7 +3,7 @@ export class User{
     firstName:string
     lastName:string
     email:string
-    profile?:string
+    picture?:string
     
     constructor(title:string, firstName:string, lastName:string,email:string){
         this.title = title
