@@ -13,8 +13,6 @@ const axiosinstance = axios.create({
 
 axiosinstance.interceptors.response.use(
     (response) => {
-        console.log(response);
-        
         if (response.status === 200) {
             Emitter.dispatch('success', 'Successfully fetched');
         }

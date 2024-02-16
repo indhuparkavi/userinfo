@@ -6,14 +6,6 @@ html {
     font-weight: 400;
   }
   
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .u-clearfix:after {
-      clear: both;
-  }
-  
   .container {
     box-shadow: 0 0 50px rgba(0,0,0,.3);
     overflow: hidden;
@@ -69,10 +61,6 @@ html {
     height: 300px;
   }
   
-  .header > svg {
-    cursor: pointer;
-  }
-  
   .main-heading {
     color: #fff;  
     font-size: 26px;
@@ -122,7 +110,6 @@ html {
   }
   
   .body-stats {
-    display: inline-block;
     font-size: 12px;
     font-weight: 700;
     float: left;
